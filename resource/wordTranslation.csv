@@ -1,0 +1,12 @@
+Python,Java,C#
+self.,this.,this.
+:,{,{
+def,private,private
+def,public,public
+,static,static
+,},}
+print,System.out.println,Console.WriteLine
+nextLine,input,Console.ReadLine
+None,null,null
+False,false,false
+True,true,true

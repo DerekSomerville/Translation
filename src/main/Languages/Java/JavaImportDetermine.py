@@ -9,8 +9,8 @@ class JavaImportDetermine(ImportDetermineInterface):
             result = True
         return result
 
-    def generateImportStructure(self,line):
-        importStructure = ImportStructure()
-
-
+    def generateImportStructure(self,fullClassPath):
+        fullClassPath.replace("import ","")
+        fullClassPath.replace(";","")
+        importStructure = ImportStructure(fullClassPath.getLine())
         return importStructure

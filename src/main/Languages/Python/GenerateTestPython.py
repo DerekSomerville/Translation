@@ -113,7 +113,7 @@ class GeneratePythonTest:
 def main():
     print(os.getcwd())
     os.chdir('C:/Users/Derek/Documents/GitHub/Translation/')
-    generateTestPython = GeneratePythonTest("Utilities/","Word.py")
+    generateTestPython = GeneratePythonTest("Languages/Java/","JavaImportDetermine.py")
     generateTestPython.generatePythonTest()
 
 if __name__ == "__main__":

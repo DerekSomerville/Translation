@@ -30,6 +30,9 @@ class Lines:
             words.append(newWord)
         return words
 
+    def replace(self,toBeReplaced,replacedWith):
+        self.line = self.line.replace(toBeReplaced,replacedWith)
+
     def generateWords(self):
         initialWords = re.split(' |,|-|_|!|:|;|\.|\(|\)|\[|\]', self.line)
         noZeroWords = self.removeZeroLengthWords(initialWords)

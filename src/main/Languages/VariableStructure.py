@@ -1,7 +1,8 @@
 from src.main.Languages.DeclareStructure import DeclareStructure
 
 class VariableStructure(DeclareStructure):
-
+    name = None
+    private = True
     variableType = None
 
     def __init__(self,name,private,variableType=None):

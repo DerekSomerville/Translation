@@ -3,10 +3,12 @@ from src.main.Utilities.Word import Word
 
 class MethodStructure(DeclareStructure):
 
-    returnVariable = None
+    returnVariables = []
     listOfInputs = []
+    private = None
     static = None
     block = []
+    name = None
 
     def __init__(self,name,private,block,returnVariable,listOfInputs,static=None):
         self.name = Word(name)
@@ -21,6 +23,9 @@ class MethodStructure(DeclareStructure):
 
     def getListOfInputs(self):
         return self.listOfInputs
+
+    def getName(self):
+        return self.name
 
     def setName(self,name):
         self.name = name
